@@ -1,37 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,300&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
-
+body {
+    font-size: 14px;
+}
 .page {
     height: 100vh; 
-    width: 100%; 
-    padding-top: 20px;
+    width: 100%;
     box-sizing: border-box;
 }
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #141414;
 }
 
-.header .image img {
-    width: 600px;
-    height: 80%;
+.header-image {
+    height: 100vh;
+    width: 50%;
 }
 
-.header img {
-    object-fit: contain;
-    margin-right: 50px;
-    box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.2);
+.header-image img {
+    height: 100%;
+    width: 80%;
+    float: right;
+    object-fit: fill;
+    box-shadow: 0 0 4px 0 rgba(90, 90, 90, 0.2);
 }
 
-.header h1 {
-    font-family: 'Bonheur Royale', cursive;
-    font-size: 80px;
+.header .lyrics {
+    padding-left: 20px;
+    font-family: 'Source Serif Pro', cursive;
     color: white;
-    margin-left: 50px;
+}
+
+.lyrics h1 {
+    font-size: 3em;
+}
+
+.lyrics p {
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 5px;
+}
+
+.youtube-iframe {
+    display: flex;
+    padding-top: 40px;;
+    width: 90%;
+    margin: auto;
+}
+
+.youtube-iframe iframe {
+    width: 100%;
+    height: 90vh;
+    box-shadow: 0 0 2px 0 rgba(90, 90, 90, 0.4);
+
+}
+
+.biography {
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 786px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1500px) {
+    body {
+        font-size: 24px;
+    }
 }
